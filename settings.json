@@ -1,19 +1,38 @@
 {
+
   "defaults": {
-    "theme": "gelbooru",
-    "length": 7,
+
+    "theme": "gelbooru",  # 选择默认的计数器主题，所有主题样式详见 https://count.getloli.com/
+
+    "length": 7,  # 控制计数器默认位数
+
     "render": "auto"
+
   },
+
   "api": {
+
     "get": true,
+
     "delete": false
+
   },
+
   "index": {
+
     "enabled": true
+
   },
-  "ids": {
-    "dsrkafuu:demo": "Demo for GitHub & preview site.",
-    "dsrkafuu:home": "Personal blog & GitHub page.",
+
+  "ids": {  # 管理计数器的 ID，防止滥用，只有填写在这里的 ID 才能计数
+
+    "dsrkafuu:demo": "Demo for GitHub & preview site.",  # 这个是 DEMO 页默认使用的 ID，不建议删除，否则建好的 DMEO 站显示不了计数器很难看
+
+    "dsrkafuu:home": "Personal blog & GitHub page.",  # 从这行开始可以换成自拟的 ID，前半部分是 ID，后半部分是备注
+
     "dsrkafuu:tools": "For DSRTOOLs counter."
+
   }
+
 }
+
