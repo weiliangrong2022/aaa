@@ -1,0 +1,30 @@
+name = "moe-counter-cf"
+
+type = "javascript"
+
+account_id = "efd30daba54f0cf9fd043fd4da0e8362"  # 此处将 <CF_ACCOUNT_ID> 替换为账户 ID
+
+zone_id = "5b81fe1046a0fb5bf9cd711ea38deec5"  # 此处将 <CF_ZONE_ID> 替换为区域 ID
+
+workers_dev = false
+
+route = "count.weiliangrong.eu.org/*"  # 此处将 <YOUR_DOMAIN> 替换为你的域名
+
+compatibility_date = "2022-03-12"
+
+kv_namespaces = [
+
+  { binding = "KV", id = "d3017c1863d24d9892d60cce639e6e78"},  # 此处将 <CF_KV_ID> 替换为命名空间 ID
+
+]
+
+ 
+
+[build]
+
+command = "npm run build"
+
+[build.upload]
+
+format = "service-worker"
+
